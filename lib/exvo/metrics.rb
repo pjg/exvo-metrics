@@ -1,4 +1,5 @@
-require "exvo/metrics/version"
+require 'exvo/metrics/version'
+require 'exvo/dummy_metrics'
 
 module Exvo
   module Metrics
