@@ -1,5 +1,6 @@
 require 'exvo/metrics/version'
 require 'exvo/dummy_metrics'
+require 'mixpanel'
 
 module Exvo
 
