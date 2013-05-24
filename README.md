@@ -70,6 +70,8 @@ If there is a situation, where `current_user` might be nil (as is the case durin
 
 Since the actual tracking is happening via client-side javascript calls, there might be a situation, when you track something in the controller, but after that there is a redirect to another website. In such situation the metric might not be recorded properly (it is usually the case with Exvo-Auth and signing in).
 
+If, however, during the same browser session the user visits the app which did the redirect (i.e. Exvo-Auth), the stored event ('Signing in') will be sent to Mixpanel. After browser restart it is lost.
+
 
 
 ## Contributing
